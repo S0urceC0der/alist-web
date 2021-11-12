@@ -25,7 +25,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -f dist
-          git diff --quiet || git commit -m "build" -a
+          git commit -m "build" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
